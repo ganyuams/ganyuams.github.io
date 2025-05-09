@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  text-align: center;
+}
+
+#gameContainer {
+  position: relative;
+}
+
+#grid {
+  display: grid;
+  gap: 2px;
+  background-color: #ddd;
+  padding: 5px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.revealed {
+  background-color: #fff;
+}
+
+.cell.marked {
+  background-color: #ff0000;
+}
