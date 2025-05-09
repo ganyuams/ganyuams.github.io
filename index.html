@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>网页扫雷</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="modeDialog" class="dialog">
+        <h2>选择游戏模式</h2>
+        <button onclick="initGame(10, 10, 15)">简单模式 (10x10)</button>
+        <button onclick="initGame(20, 20, 50)">困难模式 (20x20)</button>
+        <button onclick="initGame(50, 50, 200)">挑战模式 (50x50)</button>
+    </div>
+    
+    <div id="gameContainer">
+        <div id="minesCounter">剩余地雷：<span id="minesLeft">0</span></div>
+        <div id="grid"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
